@@ -1,9 +1,4 @@
-#include <iostream>
-
-//Created libraries
-#include "Game_Manager.cpp"
-
-using namespace std; 
+#include "Game_Manager.h"
 
 void Event_Sequence()
 {
