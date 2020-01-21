@@ -9,7 +9,7 @@ void Event_Sequence()
     manager_inst.Game_Text("Welcome to my little game");
     manager_inst.Delay(3);
     manager_inst.User_Text("What's your name? ", "Nice to meet you ");
-    // manager_inst.fake_loading();
+    manager_inst.fake_loading();
 }
 
 int main()

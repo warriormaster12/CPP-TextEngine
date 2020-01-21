@@ -1,7 +1,9 @@
 #include "Game_Manager.h"
-
 #include <iostream>
-#include <unistd.h> //sleep library
+
+//Time cross-platform libraries
+#include <chrono>
+#include <thread>
 
   
 void Game_Manager::Game_Text(std::string Ss)
@@ -13,7 +15,7 @@ void Game_Manager::User_Text(std::string Question, std::string Respons)
 {
     std::cout << Question;
     std::cin >> User_answer;
-    if(Respons != "")
+    if(Respons !="")
     {
         std::cout << Respons << User_answer << std::endl;
     }
@@ -25,11 +27,12 @@ void Game_Manager::User_Text(std::string Question, std::string Respons)
 
 void Game_Manager::Delay(float User_Seconds)
 {
+    using namespace std::chrono_literals;
     float Seconds = 0.0;
     while(Seconds < User_Seconds)
     {
-        Seconds ++;
-        sleep(1);
+        Seconds += 0.1;
+        std::this_thread::sleep_for(0.1s);
     }
 }
 void Game_Manager::fake_loading()
