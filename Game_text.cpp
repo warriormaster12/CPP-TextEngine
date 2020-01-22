@@ -1,14 +1,14 @@
 #include "Game_Manager.h"
 
 
-  
-void Game_Manager::Game_Text(const std::string& text)
+
+void Game_Manager::Game_Text(const std::string& text, bool end_line = true)
 {
     for (std::size_t i = 0; i < text.size(); ++i)
     {
         std::cout << text[i] << std::flush;
 
-        std::this_thread::sleep_for(std::chrono::milliseconds(60));
+        std::this_thread::sleep_for(std::chrono::milliseconds(30));
     }
     if (end_line == true)
     {
