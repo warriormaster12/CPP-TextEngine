@@ -6,7 +6,7 @@ void Game_Manager::fake_loading()
     while (percent < 100.0)
     {
         percent ++;
-        std::cout << percent << std::endl;
+        std::cout << percent <<"%"<< std::endl;
         Delay(0.09);
     }
 }
