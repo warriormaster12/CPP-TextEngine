@@ -7,7 +7,6 @@ void Game_Manager::User_Text(std::string Question, std::string Respons)
     if(Respons !="")
     {
         Game_Text(Respons + User_answer);
-        
     }
     else 
     {
