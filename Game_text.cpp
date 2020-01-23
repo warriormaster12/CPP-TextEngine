@@ -2,7 +2,7 @@
 
 
 
-void Game_Manager::Game_Text(const std::string& text, bool end_line = true)
+void Game_Manager::Game_Text(const std::string& text)
 {
     for (std::size_t i = 0; i < text.size(); ++i)
     {

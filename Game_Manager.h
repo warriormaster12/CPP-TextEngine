@@ -12,7 +12,7 @@ class Game_Manager
 public:
  
 	//Text created by game
-	void Game_Text(const std::string& text, bool end_line);
+	void Game_Text(const std::string& text);
     
 	//In game user input function
 	void User_Text(std::string Question, std::string Respons);
@@ -23,4 +23,5 @@ public:
 
 private:
 	std::string User_answer;
+    bool end_line = true; 
 };
