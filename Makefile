@@ -1,4 +1,4 @@
 Game: *.cpp
-	g++ *.cpp   -o Game.o
+	g++ -o Game.o *.cpp Components/*.cpp
 clean: 
 	rm Game.o

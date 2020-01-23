@@ -1,4 +1,4 @@
-#include "Game_Manager.h"
+#include "Components/Game_Manager.h"
 
 
 void Event_Sequence()
