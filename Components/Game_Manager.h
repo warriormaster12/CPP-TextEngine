@@ -20,6 +20,8 @@ public:
 	void Delay(float User_Seconds);
 
 	void fake_loading();
+	
+	void Create_Choise(std::string Text, int index);
 
 private:
 	std::string User_answer;

@@ -14,6 +14,8 @@ void Event_Sequence()
     manager_inst.Game_Text("Setting you up");
     manager_inst.Delay(1.5);
     manager_inst.fake_loading();
+    manager_inst.Create_Choise(". Choise", 0);
+    manager_inst.Create_Choise(". Another choise", 1);
 }
 
 int main()
