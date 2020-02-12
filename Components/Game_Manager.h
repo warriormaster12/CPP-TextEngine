@@ -21,7 +21,7 @@ public:
 
 	void fake_loading();
 	
-	void Create_Choise(std::string Text, int index);
+	void Create_Choice(std::string Text, int index);
 
 private:
 	std::string User_answer;
